@@ -20,12 +20,15 @@
 | solon.boot.undertow (可独立运行)     | 4.2m     | 11.3万左右     | 
 | solon.boot.smarthttp (可独立运行)     | 0.3m     | 12.5万左右     | 
 
+
+| javalin 3.1.0  | 大小 |  QPS  | 
+| -------- | -------- | -------- |
+| javalin   | 4.8m |  9.8万左右  | 
+
+
 | spring boot 2.3.3  | 大小 |  QPS  | 
 | -------- | -------- | -------- |
 | spring-boot-starter-tomcat   | 16.1m |  3.2万左右  | 
 | spring-boot-starter-jetty | 16m | 3.7万左右 |
 | spring-boot-starter-undertow | 16.8m | 4.4万左右 |
 
-| javalin 3.1.0  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| javalin   | 4.8m |  9.8万左右  | 

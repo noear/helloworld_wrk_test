@@ -11,21 +11,15 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>javalin_jetty</artifactId>
+    <artifactId>jboot_undertow</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>io.javalin</groupId>
-            <artifactId>javalin</artifactId>
-            <version>${javalin.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.30</version>
+            <groupId>io.jboot</groupId>
+            <artifactId>jboot</artifactId>
+            <version>${jboot.version}</version>
         </dependency>
     </dependencies>
 

@@ -19,10 +19,14 @@
 
         <solon.version>1.0.40</solon.version>
         <springboot.version>2.3.3.RELEASE</springboot.version>
+        <javalin.version>3.11.0</javalin.version>
+        <jboot.version>3.5.2</jboot.version>
     </properties>
 
     <modules>
         <module>javalin_jetty</module>
+        <module>jboot_undertow</module>
+
         <module>solon_jetty</module>
         <module>solon_jlhttp</module>
         <module>solon_smarthttp</module>
