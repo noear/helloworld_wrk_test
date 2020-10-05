@@ -1,10 +1,16 @@
 # helloworld_wrk_test
 helloworld_wrk_test
 
+## 测试方法
+
+* 此案运行后，用wrk测试
+* 测试代码：wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
+* 测四次，取平均值
+
+
+## 测试记录
 
 #### 2017款 macbook pro i7 16g
-
-> 测试：wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
 
 |  solon 1.0.40 | 大小 | QPS | spring boot 2.3.3  |  QPS  | 
 | -------- | -------- | -------- | -------- | -------- |
