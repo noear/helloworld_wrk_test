@@ -1,6 +1,6 @@
 # helloworld_wrk_test
 
-此案仅使用wrk对各web框架进行qps测试，欢迎添加不同的web框架
+此案仅使用wrk对各web框架进行qps测试，欢迎添加不同的web框架，或者不同机器的测试记录
 
 ## 测试方法
 
