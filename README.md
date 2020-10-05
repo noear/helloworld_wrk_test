@@ -32,3 +32,7 @@
 | spring-boot-starter-jetty | 16m | 3.7万左右 |
 | spring-boot-starter-undertow | 16.8m | 4.4万左右 |
 
+| jboot 3.5.2  | 大小 |  QPS  | 
+| -------- | -------- | -------- |
+| jboot(undertow)   | 17.2m |  3.8万左右  | 
+
