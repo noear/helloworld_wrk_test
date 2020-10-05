@@ -1,9 +1,10 @@
 # helloworld_wrk_test
-helloworld_wrk_test
+
+此案仅使用wrk对各web框架进行qps测试，欢迎添加不同的web框架
 
 ## 测试方法
 
-* 此案运行后，用wrk测试
+* 运行后，用wrk测试
 * 测试代码：wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
 * 测四次，取平均值
 
