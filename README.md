@@ -6,7 +6,7 @@
 
 * IDEA环镜下，在模块的`HelloApp`右键菜单上，点击：`Run 'HelloApp.Main'`
 * 运行后，用wrk测试：`wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"`
-* 测四次，取平均值
+* 测四次，取后三次的平均值
 
 
 ## 测试记录
