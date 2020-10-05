@@ -21,10 +21,12 @@
         <springboot.version>2.3.3.RELEASE</springboot.version>
         <javalin.version>3.11.0</javalin.version>
         <jboot.version>3.5.2</jboot.version>
+        <jetty.version>9.4.31.v20200723</jetty.version>
     </properties>
 
     <modules>
         <module>javalin_jetty</module>
+
         <module>jboot_undertow</module>
 
         <module>solon_jetty</module>
