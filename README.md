@@ -23,7 +23,7 @@
 
 | javalin 3.1.0  | 大小 |  QPS  | 
 | -------- | -------- | -------- |
-| javalin   | 4.8m |  9.8万左右  | 
+| javalin(jetty)   | 4.8m |  9.8万左右  | 
 
 
 | spring boot 2.3.3  | 大小 |  QPS  | 
