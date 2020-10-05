@@ -1,7 +1,7 @@
 **第一次**
 
 ```
-wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
+$ wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
 Running 30s test @ http://127.0.0.1:8080/
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -21,7 +21,7 @@ Transfer/sec:     12.89MB
 **第二次**
 
 ```
-wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
+$ wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
 Running 30s test @ http://127.0.0.1:8080/
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -41,7 +41,7 @@ Transfer/sec:     16.49MB
 **第三次**
 
 ```
-wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
+$ wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
 Running 30s test @ http://127.0.0.1:8080/
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -61,7 +61,7 @@ Transfer/sec:     16.63MB
 **第四次**
 
 ```
-wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
+$ wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"
 Running 30s test @ http://127.0.0.1:8080/
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
