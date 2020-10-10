@@ -36,18 +36,3 @@
 | jboot(undertow)   | 17.2m |  3.8万左右  | 
 
 
-## 附:
-
-> **Solon详解系列文章：**
-> * [Solon详解（一）- 快速入门](https://www.cnblogs.com/noear/p/13520109.html)
-> * [Solon详解（二）- Solon的核心](https://www.cnblogs.com/noear/p/13520125.html)
-> * [Solon详解（三）- Solon的web开发](https://www.cnblogs.com/noear/p/13520142.html)
-> * [Solon详解（四）- Solon的事务传播机制](https://www.cnblogs.com/noear/p/13545461.html)
-> * [Solon详解（五）- Solon扩展机制之Solon Plugin](https://www.cnblogs.com/noear/p/13547433.html)
-> * [Solon详解（六）- Solon的校验扩展框架使用与扩展  ](https://www.cnblogs.com/noear/p/13640075.html)
-> * [Solon详解（七）- Solon Ioc 的注解对比Spring及JSR330](https://www.cnblogs.com/noear/p/13666001.html)
-> * [Solon详解（八）- Solon的缓存框架使用和定制](https://www.cnblogs.com/noear/p/13737075.html)
-> * [Solon详解（九）- 渲染控制之定制统一的接口输出](https://www.cnblogs.com/noear/p/13753930.html)
-> * [Solon详解（十）- 怎么用 Solon 开发基于 undertow jsp tld 的项目？](https://www.cnblogs.com/noear/p/13772695.html)
-
-
