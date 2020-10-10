@@ -22,6 +22,7 @@
         <javalin.version>3.11.0</javalin.version>
         <jboot.version>3.5.2</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
+        <jfinal.version>4.9.02</jfinal.version>
     </properties>
 
     <modules>
