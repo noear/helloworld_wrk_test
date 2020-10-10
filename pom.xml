@@ -28,6 +28,7 @@
         <module>javalin_jetty</module>
 
         <module>jboot_undertow</module>
+        <module>jfinal_undertow</module>
 
         <module>solon_jetty</module>
         <module>solon_jlhttp</module>
