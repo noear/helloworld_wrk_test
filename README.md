@@ -13,7 +13,7 @@
 
 #### 2017款 macbook pro 13, i7, 16g, jdk11；2020-10-05
 
-|  solon 1.0.40 | 大小 | QPS | 
+|  solon 1.1.2 | 大小 | QPS | 
 | -------- | -------- | -------- | 
 | solon.boot.jlhttp(bio)     | 0.1m     | 4.7万左右     |
 | solon.boot.jetty(nio)     | 1.8m     | 10.7万左右     | 
