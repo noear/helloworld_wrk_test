@@ -15,12 +15,12 @@
 
 #### 机器：2017 macbook pro 13, i7, 16g, MacOS 10.15, jdk11；时间：2020-10-05；测试人：@Noear
 
-|  solon 1.2.11 | 大小 | QPS | 
+|  solon 1.1.2 | 大小 | QPS | 
 | -------- | -------- | -------- | 
-| solon.boot.jlhttp(bio)     | 0.2m     | 4.7万左右     |
-| solon.boot.jetty(nio, 支持servlet api)     | 1.9m     | 10.7万左右     | 
-| solon.boot.undertow(nio, 支持servlet api)     | 4.3m     | 11.3万左右     | 
-| solon.boot.smarthttp(aio)     | 0.4m     | 12.4万左右     | 
+| solon.boot.jlhttp(bio)     | 0.1m     | 4.7万左右     |
+| solon.boot.jetty(nio, 支持servlet api)     | 1.8m     | 10.7万左右     | 
+| solon.boot.undertow(nio, 支持servlet api)     | 4.2m     | 11.3万左右     | 
+| solon.boot.smarthttp(aio)     | 0.3m     | 12.4万左右     | 
 
 
 | javalin 3.1.0  | 大小 |  QPS  | 
