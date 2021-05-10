@@ -41,7 +41,8 @@
 
 | jfinal 4.9.02  | 大小 |  QPS  | 
 | -------- | -------- | -------- |
-| jfinal(undertow)   | 4.4m |  6.4万左右  | 
+| jfinal(undertow)-dev   | 4.4m |  6.4万左右  | 
+| jfinal(undertow)   | 4.4m |  8.2万左右  | 
 
 
 ----
@@ -74,6 +75,6 @@
 
 | jfinal 4.9.02  | 大小 |  QPS  | 
 | -------- | -------- | -------- |
-| jfinal(undertow)   | 4.4m |  59197  | 
+| jfinal(undertow)-dev   | 4.4m |  59197  | 
 
 
