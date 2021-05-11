@@ -23,15 +23,15 @@
 
 |  solon 1.3.35 | 大小 | QPS | 
 | -------- | -------- | -------- | 
-| solon.boot.jlhttp(bio)     | 0.1m     | 4.1万左右     |
-| solon.boot.jetty(nio, 支持servlet api)     | 1.8m     | 10.7万左右     | 
-| solon.boot.undertow(nio, 支持servlet api)     | 4.2m     | 12.0万左右     | 
-| solon.boot.smarthttp(aio)     | 0.3m     | 12.5万左右     | 
+| solon.boot.jlhttp(bio)     | 0.2m     | 4.1万左右     |
+| solon.boot.jetty(nio, 支持servlet api)     | 1.9m     | 10.7万左右     | 
+| solon.boot.undertow(nio, 支持servlet api)     | 4.3m     | 12.0万左右     | 
+| solon.boot.smarthttp(aio)     | 0.4m     | 12.5万左右     | 
 
 
 | javalin 3.13.7  | 大小 |  QPS  | 
 | -------- | -------- | -------- |
-| javalin(jetty)   | 4.8m |  9.1万左右  | 
+| javalin(jetty)   | 5.0m |  9.1万左右  | 
 
 
 | spring boot 2.3.3  | 大小 |  QPS  | 
@@ -42,7 +42,7 @@
 
 | jboot 3.9.11  | 大小 |  QPS  | 
 | -------- | -------- | -------- |
-| jboot(undertow)   | 17.2m |  8.1万左右  | 
+| jboot(undertow)   | 19.2m |  8.1万左右  | 
 
 
 | jfinal 4.9.10  | 大小 |  QPS  | 
