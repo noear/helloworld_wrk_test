@@ -40,5 +40,6 @@
         <module>springboot_jetty</module>
         <module>springboot_tomcat</module>
         <module>springboot_undertow</module>
+        <module>springboot_webflux</module>
     </modules>
 </project>
