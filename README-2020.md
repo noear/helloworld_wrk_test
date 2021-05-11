@@ -34,15 +34,6 @@
 | spring-boot-starter-jetty | 16m | 3.7万左右 |
 | spring-boot-starter-undertow | 16.8m | 4.4万左右 |
 
-| jboot 3.5.2  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| jboot(undertow)-dev   | 17.2m |  3.8万左右  | 
-
-
-| jfinal 4.9.02  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| jfinal(undertow)-dev   | 4.4m |  6.4万左右  | 
-
 
 ----
 
@@ -67,13 +58,5 @@
 | spring-boot-starter-jetty | 16m | 52058 |
 | spring-boot-starter-undertow | 16.8m | 63666 |
 
-| jboot 3.5.2  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| jboot(undertow)-dev   | 17.2m |  47105  | 
-
-
-| jfinal 4.9.02  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| jfinal(undertow)-dev   | 4.4m |  59197  | 
 
 
