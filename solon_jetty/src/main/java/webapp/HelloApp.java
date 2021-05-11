@@ -12,7 +12,7 @@ public class HelloApp {
     }
 
     @Mapping("/")
-    public String hello(String name){
-        return "hello world!";
+    public String hello(String name) {
+        return "hello world: " + name;
     }
 }

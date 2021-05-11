@@ -1,58 +1,17 @@
-# helloworld_wrk_test-2
+# helloworld_wrk_test-1
 
 此案仅使用wrk对各web框架进行qps测试，欢迎添加不同的web框架，或者不同机器的测试记录
 
 ## 测试方法
 
 * IDEA环镜下，在模块的`HelloApp`右键菜单上，点击：`Run 'HelloApp.Main'`
-* 运行后，用wrk测试：`wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/?name=test"` （本机跑，以避免网络因素干扰）
-* 测五次，去掉最高值和最低值，取另三次的平均值
-
-## 测试变化说明
-
-* 升级了一些框架的版本
-* 测试地址增加参数：name
-* 原测4次取后3次平均值，改为测5次，去最高最低再取平均值
+* 运行后，用wrk测试：`wrk -t10 -c200 -d30s --latency "http://127.0.0.1:8080/"` （本机跑，以避免网络因素干扰）
+* 测四次，取后三次的平均值
 
 
-## 新的测试记录
+## 测试记录
 
 ----
-
-#### 机器：2020 macbook pro 13, i7, 32g, MacOS 11.2.3, jdk11；时间：2021-05-11；测试人：@Noear
-
-|  solon 1.3.35 | 大小 | QPS | 
-| -------- | -------- | -------- | 
-| solon.boot.jlhttp(bio)     | 0.1m     | 4.7万左右     |
-| solon.boot.jetty(nio, 支持servlet api)     | 1.8m     | 10.7万左右     | 
-| solon.boot.undertow(nio, 支持servlet api)     | 4.2m     | 11.3万左右     | 
-| solon.boot.smarthttp(aio)     | 0.3m     | 12.4万左右     | 
-
-
-| javalin 3.13.7  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| javalin(jetty)   | 4.8m |  9.8万左右  | 
-
-
-| spring boot 2.3.3  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| spring-boot-starter-tomcat   | 16.1m |  3.2万左右  | 
-| spring-boot-starter-jetty | 16m | 3.7万左右 |
-| spring-boot-starter-undertow | 16.8m | 4.4万左右 |
-
-| jboot 3.9.11  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| jboot(undertow)   | 17.2m |  3.8万左右  | 
-
-
-| jfinal 4.9.10  | 大小 |  QPS  | 
-| -------- | -------- | -------- |
-| jfinal(undertow)   | 4.4m |  8.2万左右   | 
-
-
-----
-
-## 旧的测试记录
 
 #### 机器：2017 macbook pro 13, i7, 16g, MacOS 10.15, jdk11；时间：2020-10-05；测试人：@Noear
 

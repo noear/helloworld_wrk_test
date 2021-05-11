@@ -18,7 +18,7 @@ public class HelloApp extends JFinalConfig {
     }
 
     public void configConstant(Constants me) {
-
+        me.setDevMode(false);
     }
 
     public void configRoute(Routes me) {
