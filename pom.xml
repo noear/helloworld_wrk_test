@@ -17,7 +17,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
 
-        <solon.version>1.5.50</solon.version>
+        <solon.version>1.8.3</solon.version>
         <springboot.version>2.3.3.RELEASE</springboot.version>
         <javalin.version>3.13.7</javalin.version>
         <jboot.version>3.9.11</jboot.version>
@@ -31,6 +31,7 @@
         <module>jboot_undertow</module>
         <module>jfinal_undertow</module>
 
+        <module>solon_jdkhttp</module>
         <module>solon_jetty</module>
         <module>solon_jlhttp</module>
         <module>solon_smarthttp</module>
