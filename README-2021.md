@@ -16,7 +16,7 @@
 
 |  solon 1.3.35 | 大小 | QPS     | 
 | -------- | -------- |---------| 
-| solon.boot.jlhttp(bio)     | 0.2m     | 6.5万左右  |
+| solon.boot.jlhttp(bio)     | 0.2m     | 6.4万左右  |
 | solon.boot.jetty(nio, 支持servlet api)     | 1.9m     | 10.7万左右 | 
 | solon.boot.undertow(nio, 支持servlet api)     | 4.3m     | 12.0万左右 | 
 | solon.boot.smarthttp(aio)     | 0.4m     | 12.5万左右 | 
