@@ -1,4 +1,4 @@
-# helloworld_wrk_test-3
+# helloworld_wrk_test-2
 
 此案仅使用wrk对各web框架进行qps测试，欢迎添加不同的web框架，或者不同机器的测试记录
 
@@ -12,14 +12,14 @@
 
 ----
 
-#### 机器：2020 macbook pro 13, i7, 32g, MacOS 11.2.3, jdk11；时间：2023-01-01；测试人：@Noear
+#### 机器：2020 macbook pro 13, i7, 32g, MacOS 11.2.3, jdk11；时间：2021-05-11；测试人：@Noear
 
-| solon 1.12.2                            | 大小 | QPS     | 
+| solon 1.3.35                            | 大小 | QPS     | 
 |-----------------------------------------| -------- |---------| 
-| solon.boot.jlhttp(bio)                  | 0.2m     | 13.2万左右 |
+| solon.boot.jlhttp(bio)                  | 0.2m     | 6.4万左右  |
 | solon.boot.jetty(nio, 支持servlet api)    | 1.9m     | 10.7万左右 | 
 | solon.boot.undertow(nio, 支持servlet api) | 4.3m     | 12.0万左右 | 
-| solon.boot.smarthttp(aio)               | 0.4m     | 16.6万左右 | 
+| solon.boot.smarthttp(aio)               | 0.4m     | 12.5万左右 | 
 
 
 | javalin 3.13.7  | 大小 |  QPS  | 
