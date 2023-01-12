@@ -16,4 +16,10 @@ public class HelloApp {
     public String hello(String name){
         return "hello world: " + name;
     }
+
+    @RequestMapping("/hello2")
+    public String hello2(String name) throws Exception{
+        Thread.sleep(10);
+        return "hello world: " + name;
+    }
 }

@@ -17,4 +17,10 @@ public class HelloApp {
     public Mono<String> hello(String name) {
         return Mono.just("hello world: " + name);
     }
+
+    @RequestMapping("/hello2")
+    public Mono<String> hello2(String name) throws Exception{
+        Thread.sleep(10);
+        return Mono.just("hello world: " + name);
+    }
 }
