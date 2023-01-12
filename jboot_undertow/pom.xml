@@ -52,7 +52,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>webapp.HelloApp</mainClass>
+                            <mainClass>demo.HelloApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
