@@ -11,6 +11,7 @@ public class HelloApp {
         });
 
         app.get("/hello2", ctx -> {
+            Thread.sleep(10);
             ctx.result("Hello World: " + ctx.queryParam("name"));
         });
     }
