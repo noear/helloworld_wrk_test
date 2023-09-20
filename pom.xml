@@ -15,14 +15,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
 
-        <solon.version>1.12.2</solon.version>
-        <springboot.version>2.3.3.RELEASE</springboot.version>
+        <solon.version>2.5.5</solon.version>
+        <springboot.version>2.7.15</springboot.version>
+        <springboot3.version>3.1.2</springboot3.version>
         <javalin.version>3.13.7</javalin.version>
         <jboot.version>3.9.11</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
-        <jfinal.version>4.9.10</jfinal.version>
+        <jfinal.version>5.1.0</jfinal.version>
     </properties>
 
     <modules>
@@ -37,10 +38,43 @@
         <module>solon_smarthttp</module>
         <module>solon_undertow</module>
 
+        <module>springboot3_jetty</module>
+        <module>springboot3_tomcat</module>
+        <module>springboot3_undertow</module>
+        <module>springboot3_webflux</module>
+
 
         <module>springboot_jetty</module>
         <module>springboot_tomcat</module>
         <module>springboot_undertow</module>
         <module>springboot_webflux</module>
     </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                    <configuration>
+                        <compilerArgument>-parameters</compilerArgument>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.6.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
