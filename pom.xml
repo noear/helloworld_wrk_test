@@ -17,13 +17,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>17</java.version>
 
-        <solon.version>2.5.5</solon.version>
+        <solon.version>2.7.0</solon.version>
         <springboot.version>2.7.15</springboot.version>
-        <springboot3.version>3.1.2</springboot3.version>
-        <javalin.version>3.13.7</javalin.version>
-        <jboot.version>3.9.11</jboot.version>
+        <springboot3.version>3.2.2</springboot3.version>
+        <javalin.version>6.0.0</javalin.version>
+        <jboot.version>4.1.5</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
-        <jfinal.version>5.1.0</jfinal.version>
+        <jfinal.version>5.1.6</jfinal.version>
     </properties>
 
     <modules>
