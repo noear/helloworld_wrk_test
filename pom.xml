@@ -43,11 +43,12 @@
         <module>springboot3_undertow</module>
         <module>springboot3_webflux</module>
 
-
         <module>springboot_jetty</module>
         <module>springboot_tomcat</module>
         <module>springboot_undertow</module>
         <module>springboot_webflux</module>
+
+        <module>vertx_netty</module>
     </modules>
 
     <build>
