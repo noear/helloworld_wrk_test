@@ -11,20 +11,21 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>springboot3_webflux</artifactId>
+    <artifactId>_socketd_server</artifactId>
+    <version>demo</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
-            <version>${springboot3.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.noear</groupId>
             <artifactId>socketd-transport-smartsocket</artifactId>
             <version>${socketd.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.30</version>
         </dependency>
     </dependencies>
 
