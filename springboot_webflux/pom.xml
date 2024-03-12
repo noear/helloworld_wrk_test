@@ -20,6 +20,12 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
             <version>${springboot.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>socketd-transport-smartsocket</artifactId>
+            <version>${socketd.version}</version>
+        </dependency>
     </dependencies>
 
 

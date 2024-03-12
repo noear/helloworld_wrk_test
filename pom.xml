@@ -24,6 +24,8 @@
         <jboot.version>4.1.5</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
         <jfinal.version>5.1.6</jfinal.version>
+
+        <socketd.version>2.4.6</socketd.version>
     </properties>
 
     <modules>
@@ -37,6 +39,7 @@
         <module>solon_jlhttp</module>
         <module>solon_smarthttp</module>
         <module>solon_undertow</module>
+        <module>solon_web_flux</module>
 
         <module>springboot3_jetty</module>
         <module>springboot3_tomcat</module>

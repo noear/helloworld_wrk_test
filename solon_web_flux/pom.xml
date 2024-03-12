@@ -11,33 +11,27 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>vertx_netty</artifactId>
+    <artifactId>solon_web_flux</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-core</artifactId>
-            <version>4.4.1</version>
+            <groupId>org.noear</groupId>
+            <artifactId>solon.boot.smarthttp</artifactId>
+            <version>${solon.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-web</artifactId>
-            <version>4.4.1</version>
+            <groupId>org.noear</groupId>
+            <artifactId>solon.web.flux</artifactId>
+            <version>${solon.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>socketd-transport-smartsocket</artifactId>
             <version>${socketd.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.30</version>
         </dependency>
     </dependencies>
 

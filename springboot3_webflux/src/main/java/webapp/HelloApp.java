@@ -23,4 +23,10 @@ public class HelloApp {
         Thread.sleep(10);
         return Mono.just("hello world: " + name);
     }
+
+    @RequestMapping("/rx")
+    public Mono<String> rx(String name) throws Exception{
+        Thread.sleep(10);
+        return Mono.just("hello world: " + name);
+    }
 }
