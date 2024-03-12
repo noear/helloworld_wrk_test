@@ -34,11 +34,11 @@ public class HelloApp {
     public Mono<String> rx(String name) throws Exception {
         clientSessionInit();
 
-        Entity entity = new StringEntity("hello")
-                .metaPut("name", name == null ? "noear" : name);
-
         return Mono.create(sink -> {
             try {
+                Entity entity = new StringEntity("hello")
+                        .metaPut("name", name == null ? "noear" : name);
+
                 clientSession.sendAndRequest("hello", entity).thenReply(reply -> {
                     sink.success(reply.dataAsString());
                 }).thenError(e -> {
