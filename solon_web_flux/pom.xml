@@ -30,7 +30,13 @@
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>socketd-transport-smartsocket</artifactId>
+            <artifactId>solon.logging.simple</artifactId>
+            <version>${solon.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>socketd-transport-netty</artifactId>
             <version>${socketd.version}</version>
         </dependency>
     </dependencies>
