@@ -11,7 +11,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>solon_web_flux</artifactId>
+    <artifactId>solon_webrx</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 

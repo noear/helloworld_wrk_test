@@ -5,7 +5,6 @@ import org.noear.socketd.transport.client.ClientSession;
 import org.noear.socketd.transport.core.Entity;
 import org.noear.socketd.transport.core.entity.StringEntity;
 import org.noear.solon.Solon;
-import org.noear.solon.Utils;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Get;
 import org.noear.solon.annotation.Mapping;

@@ -41,7 +41,7 @@
         <module>solon_jlhttp</module>
         <module>solon_smarthttp</module>
         <module>solon_undertow</module>
-        <module>solon_web_flux</module>
+        <module>solon_webrx</module>
 
         <module>springboot3_jetty</module>
         <module>springboot3_tomcat</module>
