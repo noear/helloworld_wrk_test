@@ -66,7 +66,9 @@ public class HelloApp extends AbstractVerticle {
             clientSessionInitLock.lock();
             try {
                 if (clientSession == null) {
-                    clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602").open();
+                    clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602")
+                            .config(c->c.ioThreads(1).codecThreads(1).exchangeThreads(1))
+                            .open();
                 }
             } finally {
                 clientSessionInitLock.unlock();

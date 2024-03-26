@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>socketd-transport-smartsocket</artifactId>
+            <artifactId>socketd-transport-netty</artifactId>
             <version>${socketd.version}</version>
         </dependency>
 
