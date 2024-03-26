@@ -15,7 +15,7 @@ public class Config implements LifecycleBean {
     public void start() throws Throwable {
         //启动服务端
         server = SocketD.createServer("sd:tcp")
-                .config(c -> c.port(18602))
+                .config(c -> c.port(18602).exchangeThreads(1).ioThreads(1).codecThreads(1))
                 .listen(new EventListener()
                         .doOn("hello", (s, m) -> { //收到"/demo"事件的消息时
                             if (m.isRequest() || m.isSubscribe()) {
