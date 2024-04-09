@@ -30,6 +30,17 @@ public class HelloApp {
         return Mono.just("hello world: " + name);
     }
 
+    @Mapping("/ax")
+    public String ax(String name) throws Exception {
+        clientSessionInit();
+
+        Entity entity = new StringEntity("hello")
+                .metaPut("name", name == null ? "noear" : name);
+
+        return clientSession.sendAndRequest("hello", entity).await().dataAsString();
+
+    }
+
     @Mapping("/rx")
     public Mono<String> rx(String name) throws Exception {
         clientSessionInit();
