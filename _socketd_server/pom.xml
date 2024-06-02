@@ -18,14 +18,14 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>socketd-transport-netty</artifactId>
+            <artifactId>socketd-transport-smartsocket</artifactId>
             <version>${socketd.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.logging.simple</artifactId>
-            <version>${solon.version}</version>
+            <artifactId>socketd-transport-java-websocket</artifactId>
+            <version>${socketd.version}</version>
         </dependency>
     </dependencies>
 

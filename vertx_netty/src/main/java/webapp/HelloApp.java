@@ -7,8 +7,6 @@ import org.noear.socketd.SocketD;
 import org.noear.socketd.transport.client.ClientSession;
 import org.noear.socketd.transport.core.entity.StringEntity;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 public class HelloApp extends AbstractVerticle {
     public static void main(String[] args) {
         HelloApp verticle = new HelloApp();
@@ -19,7 +17,6 @@ public class HelloApp extends AbstractVerticle {
 
     @Override
     public void start() {
-
         Router router = Router.router(vertx);
 
         router.get("/").handler(req -> {
@@ -40,7 +37,6 @@ public class HelloApp extends AbstractVerticle {
 
         router.get("/rx").handler(req -> {
             try {
-                clientSessionInit();
                 clientSession.sendAndRequest("hello", new StringEntity("hello").metaPut("name", "noear"))
                         .thenReply(r -> {
                             req.response().putHeader("content-type", "text/plain")
@@ -58,21 +54,7 @@ public class HelloApp extends AbstractVerticle {
         vertx.createHttpServer().requestHandler(router::handle).listen(8080);
     }
 
-    private ClientSession clientSession;
-    private ReentrantLock clientSessionInitLock = new ReentrantLock();
-
-    private void clientSessionInit() throws Exception {
-        if (clientSession == null) {
-            clientSessionInitLock.lock();
-            try {
-                if (clientSession == null) {
-                    clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602")
-                            .config(c->c.ioThreads(1).codecThreads(1).exchangeThreads(1))
-                            .open();
-                }
-            } finally {
-                clientSessionInitLock.unlock();
-            }
-        }
-    }
+    private ClientSession clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602")
+            .config(c -> c.ioThreads(1).codecThreads(1).exchangeThreads(1))
+            .open();
 }

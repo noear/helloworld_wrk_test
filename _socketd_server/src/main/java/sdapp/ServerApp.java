@@ -1,9 +1,14 @@
 package sdapp;
 
-import org.noear.solon.Solon;
 
 public class ServerApp {
     public static void main(String[] args) throws Exception {
-        Solon.start(ServerApp.class, args);
+        final ServerImpl server = new ServerImpl();
+
+        //启动
+        server.start();
+
+        //停止
+        Runtime.getRuntime().addShutdownHook(new Thread(server::stop));
     }
 }

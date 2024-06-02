@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 @RestController
 @SpringBootApplication
 public class HelloApp {
@@ -32,8 +30,6 @@ public class HelloApp {
 
     @RequestMapping("/rx")
     public Mono<String> rx(String name) throws Exception {
-        clientSessionInit();
-
         return Mono.create(sink -> {
             try {
                 Entity entity = new StringEntity("hello")
@@ -50,19 +46,7 @@ public class HelloApp {
         });
     }
 
-    private ClientSession clientSession;
-    private ReentrantLock clientSessionInitLock = new ReentrantLock();
-
-    private void clientSessionInit() throws Exception{
-        if (clientSession == null) {
-            clientSessionInitLock.lock();
-            try {
-                if (clientSession == null) {
-                    clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602").open();
-                }
-            } finally {
-                clientSessionInitLock.unlock();
-            }
-        }
-    }
+    private ClientSession clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602")
+            .config(c -> c.ioThreads(1).codecThreads(1).exchangeThreads(1))
+            .open();
 }

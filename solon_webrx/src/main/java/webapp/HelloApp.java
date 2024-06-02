@@ -10,8 +10,6 @@ import org.noear.solon.annotation.Get;
 import org.noear.solon.annotation.Mapping;
 import reactor.core.publisher.Mono;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 @Get
 @Controller
 public class HelloApp {
@@ -25,15 +23,13 @@ public class HelloApp {
     }
 
     @Mapping("/hello2")
-    public Mono<String> hello2(String name) throws Exception{
+    public Mono<String> hello2(String name) throws Exception {
         Thread.sleep(10);
         return Mono.just("hello world: " + name);
     }
 
     @Mapping("/ax")
     public String ax(String name) throws Exception {
-        clientSessionInit();
-
         Entity entity = new StringEntity("hello")
                 .metaPut("name", name == null ? "noear" : name);
 
@@ -43,8 +39,6 @@ public class HelloApp {
 
     @Mapping("/rx")
     public Mono<String> rx(String name) throws Exception {
-        clientSessionInit();
-
         return Mono.create(sink -> {
             try {
                 Entity entity = new StringEntity("hello")
@@ -61,21 +55,7 @@ public class HelloApp {
         });
     }
 
-    private ClientSession clientSession;
-    private ReentrantLock clientSessionInitLock = new ReentrantLock();
-
-    private void clientSessionInit() throws Exception{
-        if (clientSession == null) {
-            clientSessionInitLock.lock();
-            try {
-                if (clientSession == null) {
-                    clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602")
-                            .config(c->c.ioThreads(1).codecThreads(1).exchangeThreads(1))
-                            .open();
-                }
-            } finally {
-                clientSessionInitLock.unlock();
-            }
-        }
-    }
+    private ClientSession clientSession = SocketD.createClient("sd:tcp://127.0.0.1:18602")
+            .config(c -> c.ioThreads(1).codecThreads(1).exchangeThreads(1))
+            .open();
 }
