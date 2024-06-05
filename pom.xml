@@ -24,6 +24,7 @@
         <jboot.version>4.1.5</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
         <jfinal.version>5.1.6</jfinal.version>
+        <smarthttp.version>1.4.2</smarthttp.version>
 
         <socketd.version>2.5.3</socketd.version>
     </properties>
@@ -35,6 +36,8 @@
 
         <module>jboot_undertow</module>
         <module>jfinal_undertow</module>
+
+        <module>smarthttp_rx</module>
 
         <module>solon_jdkhttp</module>
         <module>solon_jetty</module>
