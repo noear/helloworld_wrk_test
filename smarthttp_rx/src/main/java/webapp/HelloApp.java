@@ -16,7 +16,10 @@ import java.util.concurrent.CompletableFuture;
 public class HelloApp {
     public static void main(String[] args) {
         HttpBootstrap bootstrap = new HttpBootstrap();
-        bootstrap.configuration().debug(true);
+        bootstrap.configuration()
+                .threadNum(Runtime.getRuntime().availableProcessors())
+                .debug(false);
+
         bootstrap.httpHandler(new HttpServerHandler() {
             @Override
             public void handle(HttpRequest request, HttpResponse response, CompletableFuture<Object> completableFuture) throws IOException {
