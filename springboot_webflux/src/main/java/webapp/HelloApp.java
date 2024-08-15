@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
+
 @RestController
 @SpringBootApplication
 public class HelloApp {
@@ -24,8 +26,8 @@ public class HelloApp {
 
     @RequestMapping("/hello2")
     public Mono<String> hello2(String name) throws Exception{
-        Thread.sleep(10);
-        return Mono.just("hello world: " + name);
+        return Mono.just("hello world: " + name)
+                .delayElement(Duration.ofMillis(10));
     }
 
     @RequestMapping("/rx")

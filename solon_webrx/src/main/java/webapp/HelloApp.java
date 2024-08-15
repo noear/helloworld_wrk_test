@@ -10,6 +10,8 @@ import org.noear.solon.annotation.Get;
 import org.noear.solon.annotation.Mapping;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
+
 @Get
 @Controller
 public class HelloApp {
@@ -24,8 +26,8 @@ public class HelloApp {
 
     @Mapping("/hello2")
     public Mono<String> hello2(String name) throws Exception {
-        Thread.sleep(10);
-        return Mono.just("hello world: " + name);
+        return Mono.just("hello world: " + name)
+                .delayElement(Duration.ofMillis(10));
     }
 
     @Mapping("/ax")
