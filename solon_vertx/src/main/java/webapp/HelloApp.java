@@ -11,24 +11,23 @@ import org.noear.solon.annotation.Get;
 import org.noear.solon.annotation.Mapping;
 import reactor.core.publisher.Mono;
 
-import java.time.Duration;
-
-@Get
 @Controller
 public class HelloApp {
     public static void main(String[] args) {
         Solon.start(HelloApp.class, args);
     }
 
+    @Get
     @Mapping("/")
-    public Mono<String> hello(String name) {
-        return Mono.just("hello world: " + name);
+    public String hello(String name) {
+        return "hello world: " + name;
     }
 
+    @Get
     @Mapping("/hello2")
-    public Mono<String> hello2(String name) throws Exception {
-        return Mono.just("hello world: " + name)
-                .delayElement(Duration.ofMillis(10));
+    public String hello2(String name) throws Exception {
+        Thread.sleep(10);
+        return "hello world: " + name;
     }
 
     @Mapping("/ax")
