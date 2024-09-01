@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.boot.undertow</artifactId>
+            <artifactId>solon-boot-undertow</artifactId>
             <version>${solon.version}</version>
         </dependency>
     </dependencies>

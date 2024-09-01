@@ -18,19 +18,19 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.boot.smarthttp</artifactId>
+            <artifactId>solon-boot-smarthttp</artifactId>
             <version>${solon.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.web.rx</artifactId>
+            <artifactId>solon-web-rx</artifactId>
             <version>${solon.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.logging.simple</artifactId>
+            <artifactId>solon-logging-simple</artifactId>
             <version>${solon.version}</version>
         </dependency>
 

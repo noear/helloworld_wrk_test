@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.boot.jetty</artifactId>
+            <artifactId>solon-boot-jetty</artifactId>
             <version>${solon.version}</version>
         </dependency>
     </dependencies>

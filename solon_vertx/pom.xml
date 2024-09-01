@@ -18,13 +18,13 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.boot.vertx</artifactId>
+            <artifactId>solon-boot-vertx</artifactId>
             <version>${solon.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.web.rx</artifactId>
+            <artifactId>solon-web-rx</artifactId>
             <version>${solon.version}</version>
         </dependency>
 

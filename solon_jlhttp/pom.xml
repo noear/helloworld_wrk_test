@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.boot.jlhttp</artifactId>
+            <artifactId>solon-boot-jlhttp</artifactId>
             <version>${solon.version}</version>
         </dependency>
     </dependencies>
