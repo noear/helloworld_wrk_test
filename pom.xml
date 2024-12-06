@@ -17,9 +17,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>17</java.version>
 
-        <solon.version>2.9.2</solon.version>
+        <solon.version>3.0.4</solon.version>
         <springboot.version>2.7.15</springboot.version>
-        <springboot3.version>3.2.2</springboot3.version>
+        <springboot3.version>3.4.0</springboot3.version>
         <javalin.version>6.0.0</javalin.version>
         <jboot.version>4.1.5</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
