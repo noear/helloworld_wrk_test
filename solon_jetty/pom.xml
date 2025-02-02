@@ -21,6 +21,12 @@
             <artifactId>solon-boot-jetty</artifactId>
             <version>${solon.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon-web-rx</artifactId>
+            <version>${solon.version}</version>
+        </dependency>
     </dependencies>
 
 
