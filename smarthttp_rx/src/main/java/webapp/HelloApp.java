@@ -26,9 +26,9 @@ public class HelloApp {
                 String name = request.getParameter("name");
                 String path = request.getRequestURI();
 
-                if ("/ax".equals(path)) {
+                if ("/sd/ax".equals(path)) {
                     ax(name, response, completableFuture);
-                } else if ("/rx".equals(path)) {
+                } else if ("/sd/rx".equals(path)) {
                     rx(name, response, completableFuture);
                 } else {
                     completableFuture.complete(null);

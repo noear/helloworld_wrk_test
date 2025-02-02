@@ -15,7 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
 
         <solon.version>3.0.7</solon.version>
         <springboot.version>2.7.15</springboot.version>
@@ -24,7 +24,7 @@
         <jboot.version>4.1.5</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
         <jfinal.version>5.1.6</jfinal.version>
-        <smarthttp.version>1.4.3</smarthttp.version>
+        <smarthttp.version>2.5.1</smarthttp.version>
 
         <socketd.version>2.5.7</socketd.version>
     </properties>

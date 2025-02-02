@@ -31,8 +31,21 @@ public class HelloApp {
                 .delayElement(Duration.ofMillis(10));
     }
 
-    @Mapping("/ax")
-    public String ax(String name) throws Exception {
+    @Get
+    @Mapping("/rx")
+    public Mono<String> rx(String name) {
+        return Mono.just("hello world: " + name);
+    }
+
+    @Get
+    @Mapping("/rx2")
+    public Mono<String> rx2(String name) {
+        return Mono.delay(Duration.ofSeconds(10))
+                .then(Mono.just("hello world: " + name));
+    }
+
+    @Mapping("/sd/ax")
+    public String sd_ax(String name) throws Exception {
         Entity entity = new StringEntity("hello")
                 .metaPut("name", name == null ? "noear" : name);
 
@@ -40,8 +53,8 @@ public class HelloApp {
 
     }
 
-    @Mapping("/rx")
-    public Mono<String> rx(String name) throws Exception {
+    @Mapping("/sd/rx")
+    public Mono<String> sd_rx(String name) throws Exception {
         return Mono.create(sink -> {
             try {
                 Entity entity = new StringEntity("hello")

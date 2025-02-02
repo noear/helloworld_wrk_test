@@ -17,7 +17,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.smartboot.http</groupId>
+            <groupId>org.noear</groupId>
             <artifactId>smart-http-server</artifactId>
             <version>${smarthttp.version}</version>
         </dependency>
