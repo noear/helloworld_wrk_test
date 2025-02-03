@@ -36,7 +36,7 @@ public class HelloApp {
     @Get
     @Mapping("/rx2")
     public Mono<String> rx2(String name) {
-        return Mono.delay(Duration.ofSeconds(10))
+        return Mono.delay(Duration.ofMillis(10))
                 .then(Mono.just("hello world: " + name));
     }
 }
