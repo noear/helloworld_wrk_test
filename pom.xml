@@ -19,7 +19,8 @@
 
         <solon.version>3.7.3</solon.version>
         <springboot.version>2.7.15</springboot.version>
-        <springboot3.version>3.4.0</springboot3.version>
+        <springboot3.version>3.5.8</springboot3.version>
+        <springboot4.version>4.0.0</springboot4.version>
         <javalin.version>6.0.0</javalin.version>
         <jboot.version>4.1.5</jboot.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
@@ -42,10 +43,12 @@
         <module>solon_grizzly</module>
         <module>solon_jdkhttp</module>
         <module>solon_jetty</module>
-<!--        <module>solon_jlhttp</module>-->
+        <module>solon_jetty_jakarta</module>
         <module>solon_smarthttp</module>
         <module>solon_tomcat</module>
+        <module>solon_tomcat_jakarta</module>
         <module>solon_undertow</module>
+        <module>solon_undertow_jakarta</module>
         <module>solon_vertx</module>
         <module>solon_webrx</module>
 
@@ -53,6 +56,10 @@
         <module>springboot3_tomcat</module>
         <module>springboot3_undertow</module>
         <module>springboot3_webflux</module>
+
+        <module>springboot4_jetty</module>
+        <module>springboot4_tomcat</module>
+        <module>springboot4_webflux</module>
 
         <module>springboot_jetty</module>
         <module>springboot_tomcat</module>
