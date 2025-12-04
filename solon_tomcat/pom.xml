@@ -11,14 +11,14 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>solon_undertow</artifactId>
+    <artifactId>solon_tomcat</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon-server-undertow</artifactId>
+            <artifactId>solon-server-tomcat</artifactId>
             <version>${solon.version}</version>
         </dependency>
 
