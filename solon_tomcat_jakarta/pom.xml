@@ -11,7 +11,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>solon_tomcat_ jakarta</artifactId>
+    <artifactId>solon_tomcat_jakarta</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
