@@ -5,6 +5,7 @@ import org.noear.solon.Solon;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Get;
 import org.noear.solon.annotation.Mapping;
+import org.noear.solon.util.ScopeLocalJdk25;
 import reactor.core.publisher.Mono;
 
 import java.time.Duration;
@@ -12,7 +13,9 @@ import java.time.Duration;
 @Controller
 public class HelloApp {
     public static void main(String[] args) {
-        Solon.start(HelloApp.class, args);
+        Solon.start(HelloApp.class, args, app->{
+            app.factories().scopeLocalFactory(ScopeLocalJdk25::new);
+        });
     }
 
     @Get
